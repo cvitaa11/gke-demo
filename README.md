@@ -1,5 +1,7 @@
 # GKE Demo with Terraform
 
+[![CI/CD Pipeline](https://github.com/cvitaa11/gke-demo/actions/workflows/main.yml/badge.svg)](https://github.com/cvitaa11/gke-demo/actions/workflows/main.yml)
+
 This repository contains Terraform configurations to deploy a Google Kubernetes Engine (GKE) cluster with custom networking settings.
 
 ## Prerequisites
