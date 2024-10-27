@@ -30,13 +30,14 @@ Example output:
 1. Clone the repository:
 ```bash
 git clone https://github.com/cvitaa11/gke-demo.git
-cd gke-demo/infra
+cd gke-demo/infra/example
 ```
 
 2. Create a `terraform.tfvars` file with your project settings:
 ```bash
-project_id = "your-project-id"
-region     = "your-desired-region"
+project_id     = "your-project-id"
+region         = "your-desired-region"
+node_locations = ["your-desired-AZs"]
 ```
 3. Initialize Terraform
 ```bash
