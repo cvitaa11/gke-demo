@@ -12,9 +12,6 @@ jobs:
   terraform-checks:
     name: Terraform Lint & Validation
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./infra
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -24,10 +21,13 @@ jobs:
           terraform_version: 1.5.7
       - name: Terraform Format Check
         run: terraform fmt -check -recursive
+        working-directory: infra
       - name: Initialize Terraform
         run: terraform init
+        working-directory: infra/example
       - name: Validate Terraform Configuration
         run: terraform validate
+        working-directory: infra/example
 
   test-apps:
     name: Test Applications
