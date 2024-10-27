@@ -8,9 +8,3 @@ terraform {
 
   required_version = "~> 1.5.7"
 }
-
-# Provider configuration
-provider "google" {
-  project = var.project_id
-  region  = var.region
-}
